@@ -49,19 +49,38 @@ def render_map(map_path: Path) -> Path:
     sample_sprite = Image.open(get_sprite_path("normal"))
     tile_size = sample_sprite.width  # Sprites are square
 
+    # Load the normal background tile (used as base for all cells)
+    normal_sprite = Image.open(SPRITES_DIR / "normal.png").convert("RGBA")
+    if normal_sprite.width != tile_size or normal_sprite.height != tile_size:
+        normal_sprite = normal_sprite.resize((tile_size, tile_size), Image.LANCZOS)
+
+    # Tiles that replace the background entirely (no normal underneath)
+    OPAQUE_TILES = {"wall"}
+
     # Create output image
     output = Image.new("RGBA", (cols * tile_size, rows * tile_size))
 
     for row_idx, row in enumerate(grid):
         for col_idx, tile_code in enumerate(row):
-            sprite_path = get_sprite_path(tile_code)
-            sprite = Image.open(sprite_path).convert("RGBA")
+            x = col_idx * tile_size
+            y = row_idx * tile_size
 
-            # Resize if sprite doesn't match expected tile size
-            if sprite.width != tile_size or sprite.height != tile_size:
-                sprite = sprite.resize((tile_size, tile_size), Image.LANCZOS)
-
-            output.paste(sprite, (col_idx * tile_size, row_idx * tile_size), sprite)
+            if tile_code in OPAQUE_TILES:
+                # Wall tiles replace the background entirely
+                sprite_path = get_sprite_path(tile_code)
+                sprite = Image.open(sprite_path).convert("RGBA")
+                if sprite.width != tile_size or sprite.height != tile_size:
+                    sprite = sprite.resize((tile_size, tile_size), Image.LANCZOS)
+                output.paste(sprite, (x, y), sprite)
+            else:
+                # All other tiles: draw normal background first, then overlay the tile sprite
+                output.paste(normal_sprite, (x, y), normal_sprite)
+                if tile_code != "normal":
+                    sprite_path = get_sprite_path(tile_code)
+                    sprite = Image.open(sprite_path).convert("RGBA")
+                    if sprite.width != tile_size or sprite.height != tile_size:
+                        sprite = sprite.resize((tile_size, tile_size), Image.LANCZOS)
+                    output.paste(sprite, (x, y), sprite)
 
     # Place avatar on start position (top-left, [0,0])
     avatar_path = SPRITES_DIR / "avatar.png"
@@ -74,8 +93,8 @@ def render_map(map_path: Path) -> Path:
         if start_tile != "start":
             output.paste(avatar, (0, 0), avatar)
 
-    # Save output
-    output_path = map_path.parent / "map.png"
+    # Save output — use same base name as input with .png extension
+    output_path = map_path.with_suffix('.png')
     output.save(output_path, "PNG")
     print(f"Rendered {rows}x{cols} map ({tile_size}px tiles) -> {output_path}")
     return output_path

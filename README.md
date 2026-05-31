@@ -2,65 +2,72 @@
 
 Historical competition data from the AWS AI League Agentic Challenge events.
 
-This repository contains maps, challenge definitions, and scoring parameters from past competitions. Use this data to practice strategies, build tools, or study map layouts with the [Community Edition](https://github.com/aws-ai-community/ai-league-community-edition) Map Builder.
+This repository contains maps, challenge definitions, and scoring parameters from past competitions. Use this data to practice strategies, build tools, or study map layouts with the [Community Edition Map Builder](https://github.com/aws-ai-community/ai-league-community-edition).
+
+## Competitions
+
+| Event | Date | Maps | Details |
+|-------|------|------|---------|
+| [Hero Community Builder](competitions/2026/Hero-Community-Builder/) | May 2026 | 1 map (10×10, 230s) | Online leaderboard competition |
+| [London Summit](competitions/2026/London-Summit/) | May 2026 | 1 practice + 3 finale maps | In-person summit with door/key mechanics |
 
 ## Directory Structure
 
 ```
 competitions/
 └── 2026/
-    ├── Hero-Community-Builder/   # Online competition (May 2026)
-    │   ├── README.md             # Event overview and rules
+    ├── Hero-Community-Builder/   # Online competition
+    │   ├── README.md             # Event overview with embedded map
     │   ├── map.json              # Map grid (10×10 array)
-    │   ├── map.png               # Visual map rendering
-    │   └── challenges.yaml       # Challenge definitions and scoring
-    ├── London-Summit/            # In-person summit event (May 2026)
-    │   ├── README.md
-    │   ├── map.json              # Known practice map
-    │   ├── map.png
-    │   └── challenges.yaml       # Includes door/key mechanics
-    └── .../                      # Future events
+    │   └── map.png               # Visual map rendering
+    └── London-Summit/            # In-person summit event
+        ├── README.md             # Event overview with all maps embedded
+        ├── map.json              # Known practice map
+        ├── map.png               # Practice map rendering
+        ├── finale-1-map.json     # Finale round 1 (10×10, 65s)
+        ├── finale-1-map.png
+        ├── finale-2-map.json     # Finale round 2 (6×6, 95s)
+        ├── finale-2-map.png
+        ├── finale-3-map.json     # Finale round 3 (9×9, 120s)
+        └── finale-3-map.png
 source/
-└── agentic-sprites/              # 64×64 PNG sprite assets for all tile types
+└── agentic-sprites/              # 100×100 PNG sprite assets for all tile types
 scripts/
-└── render_map.py                 # Generate map.png from map.json using sprites
+└── render_map.py                 # Generate map PNGs from map.json using sprites
 ```
-
-## Competitions
-
-| Event | Date | Timer | Notable Features |
-|-------|------|-------|------------------|
-| Hero Community Builder | May 2026 | 3:50 | Base challenge set, online leaderboard |
-| London Summit | May 2026 | 5:50 | Door/key mechanics, 1 known + 3 unknown maps |
 
 ## How to Use
 
-### Load a map in the Community Edition Map Builder
+### View maps
 
-The `map.json` files are compatible with the Map Builder in the AI League Community Edition app. Import them directly to visualize and test pathfinding strategies.
+Each competition README embeds the rendered map images inline. Click through to the competition links above.
 
 ### Render a map image
 
 ```bash
 pip install Pillow
-python scripts/render_map.py competitions/2026/Hero-Community-Builder/map.json
+python scripts/render_map.py competitions/2026/London-Summit/finale-3-map.json
 ```
 
-This generates a `map.png` in the same directory as the input file.
+Outputs a PNG in the same directory as the input file. Non-wall tiles are rendered with the normal floor background underneath.
 
-### Study challenge definitions
+### Load in the Community Edition Map Builder
 
-Each `challenges.yaml` contains the full game parameters: challenge types, point values, grading methods, scoring formulas, and tool constraints.
+The `map.json` files are compatible with the Map Builder's import format. Copy the JSON content and use it to visualize and test pathfinding strategies.
 
 ## Sprite Assets
 
-The `source/agentic-sprites/` directory contains the 64×64 PNG sprites used in the game UI:
+The `source/agentic-sprites/` directory contains the 100×100 PNG sprites used in the game:
 
 - `normal.png`, `wall.png`, `treasure.png` — terrain tiles
 - `c1.png` through `c43.png` — challenge, coin, hazard, door, and key tiles
-- `avatar.png` — player character (used for start position)
+- `avatar.png` — player character
 - `lives.png`, `time.png` — UI elements
 
 ## Contributing
 
-If you have data from other AI League events (maps, challenge configs, scoring results), feel free to open a PR.
+See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines on adding competition data.
+
+## License
+
+See [LICENSE](LICENSE) for details.

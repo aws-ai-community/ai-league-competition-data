@@ -7,19 +7,21 @@
 - **Format**: 1 known map (practice round) + 3 unknown maps (finale rounds)
 - **Note**: Lambda code, agent setup, and system prompt cannot change between rounds — only the navigation prompt text changes.
 
-## Game Parameters
+## Game Parameters (Practice Round)
 
 | Parameter | Value |
 |-----------|-------|
 | Grid Size | 10×10 |
 | Starting Lives | 5 |
 | Timer | 350 seconds (5:50) |
-| Start Position | A1 (top-left, [0,0]) |
-| Max Path Steps | 200 |
+| Start Position | A1 (row 0, col 0) |
+| Treasure | J10 (row 9, col 9) |
+
+## Practice Map
+
+![London Practice Map](map.png)
 
 ## Challenge Types
-
-Same as Hero Community Builder, plus door/key mechanics:
 
 | Tile | Name | Points | Grading Method |
 |------|------|--------|----------------|
@@ -33,20 +35,12 @@ Same as Hero Community Builder, plus door/key mechanics:
 
 ## Door & Key Tiles
 
-London introduced colored doors and keys. A key must be collected before its matching door can be opened.
+London introduced colored doors and keys. A key must be collected before its matching door can be opened. Passing a door without the key costs -5 lives.
 
-| Tile | Name | Color |
-|------|------|-------|
-| c30 | Red Door | Red |
-| c31 | Blue Door | Blue |
-| c32 | Green Door | Green |
-| c33 | Yellow Door | Yellow |
-| c40 | Red Key | Red |
-| c41 | Blue Key | Blue |
-| c42 | Green Key | Green |
-| c43 | Yellow Key | Yellow |
-
-**Important**: The game asks "What is red key N?" (not "open the door") when encountering a door challenge. The agent must have collected the matching key tile first.
+| Tile | Name | Points | Damage without key |
+|------|------|--------|--------------------|
+| c30 | Red Door | 1000 | -5 lives |
+| c40 | Red Key | 50 | — |
 
 ## Other Tiles
 
@@ -56,7 +50,7 @@ London introduced colored doors and keys. A key must be collected before its mat
 | c8 | Spike Trap | -1 life |
 | wall | Wall | Impassable |
 | normal | Normal | Walkable, no effect |
-| treasure | Treasure | Game objective |
+| treasure | Treasure | Game objective (+1000 bonus) |
 
 ## Scoring Formula
 
@@ -68,26 +62,13 @@ Final Score = challenge_points + coin_points + treasure_bonus + lives_bonus + to
 - **Per Life Remaining**: +250 points
 - **Token Bonus**: max(0, 1000 - (total_output_tokens / challenges_visited))
 
-## Custom Model Bonus
-
-Same as Hero Community Builder — fine-tuned models reduce token penalty.
-
-## Known Map (Practice Round)
-
-The `map.json` file contains the known practice map.
-
-| Parameter | Value |
-|-----------|-------|
-| Grid Size | 10×10 |
-| Timer | 350 seconds |
-| Start Position | A1 (row 0, col 0) |
-| Treasure | J10 (row 9, col 9) |
+---
 
 ## Finale Maps
 
 The 3 finale maps were revealed during the live event. Agents used the same Lambda code and system prompt across all rounds — only the navigation prompt changed.
 
-### Finale 1
+### Finale 1 — Speed Run (10×10, 65s)
 
 | Parameter | Value |
 |-----------|-------|
@@ -96,11 +77,15 @@ The 3 finale maps were revealed during the live event. Agents used the same Lamb
 | Start Position | A10 (row 9, col 0) |
 | Treasure | J1 (row 0, col 9) |
 | Treasure Bonus | 5000 |
-| Challenge Overrides | c17: 50 points |
+| Overrides | c17: 50 points |
 
-A speed-focused map with a tight 65-second timer. The agent starts bottom-left and must reach the treasure at top-right. Features a horizontal wall of spike traps (c8) across row 4, vertical coins (c7) along the right edge, and concise-answer distractors (c17) at the corners.
+![London Finale 1 Map](finale-1-map.png)
 
-### Finale 2
+A speed-focused map with a tight 65-second timer. Horizontal spike wall across row 4, coins along the right edge, and concise-answer distractors at corners.
+
+---
+
+### Finale 2 — Compact Puzzle (6×6, 95s)
 
 | Parameter | Value |
 |-----------|-------|
@@ -108,11 +93,15 @@ A speed-focused map with a tight 65-second timer. The agent starts bottom-left a
 | Timer | 95 seconds |
 | Start Position | F1 (row 0, col 5) |
 | Treasure | F6 (row 5, col 5) |
-| Challenge Overrides | c17: 50 points, c7: 750 points |
+| Overrides | c17: 50 points, c7: 750 points |
 
-A compact 6×6 map with door/key mechanics. The agent starts top-right and must reach the treasure at bottom-right. Features a red door (c30) and red key (c40), walls blocking the top-left corner, and high-value coins (c7 worth 750 points).
+![London Finale 2 Map](finale-2-map.png)
 
-### Finale 3
+A compact 6×6 map with door/key mechanics. Red door (c30) and red key (c40), walls blocking the top-left corner, and high-value coins (c7 worth 750 points).
+
+---
+
+### Finale 3 — Fortress Maze (9×9, 120s)
 
 | Parameter | Value |
 |-----------|-------|
@@ -120,19 +109,18 @@ A compact 6×6 map with door/key mechanics. The agent starts top-right and must 
 | Timer | 120 seconds |
 | Start Position | E9 (row 8, col 4) |
 | Treasure | E1 (row 0, col 4) |
-| Challenge Overrides | c17: 50 points |
+| Overrides | c17: 50 points |
 
-A fortress-style 9×9 map with heavy wall borders forming a concentric maze. The agent starts at the bottom center and must navigate inward/upward to reach the treasure at the top center. The outer ring is mostly walls, with coins (c7) guarding the corridors. The inner rings contain spike traps (c8), guardrails (c1), and point challenges (c4, c5). A red door/key pair and c6 challenge add complexity.
+![London Finale 3 Map](finale-3-map.png)
+
+A fortress-style 9×9 map with heavy wall borders forming a concentric maze. Outer ring is mostly walls with coins guarding corridors. Inner rings contain spike traps, guardrails, and point challenges. Features a Boss (c6), red door/key pair, and Dark Prophet challenges.
+
+---
 
 ## Files
 
-- `map.json` — The known practice map as a 10×10 grid array
-- `map.png` — Visual rendering of the known practice map
-- `finale-1-map.json` — Finale round 1 map (10×10)
-- `finale-1-map.png` — Visual rendering of finale 1
-- `finale-2-map.json` — Finale round 2 map (6×6)
-- `finale-2-map.png` — Visual rendering of finale 2
-- `finale-3-map.json` — Finale round 3 map (9×9)
-- `finale-3-map.png` — Visual rendering of finale 3
-- `challenges.yaml` — Full challenge definition file (includes door/key tiles)
-- `generate_finale_maps.py` — Script used to generate the finale map JSON files
+- `map.json` — Known practice map (10×10)
+- `map.png` — Visual rendering of practice map
+- `finale-1-map.json` / `finale-1-map.png` — Finale round 1
+- `finale-2-map.json` / `finale-2-map.png` — Finale round 2
+- `finale-3-map.json` / `finale-3-map.png` — Finale round 3

@@ -14,7 +14,11 @@
 | Starting Lives | 5 |
 | Timer | 230 seconds (3:50) |
 | Start Position | A1 (top-left, [0,0]) |
-| Max Path Steps | 200 |
+| Treasure | I9 (row 8, col 8) |
+
+## Map
+
+![Hero Community Builder Map](map.png)
 
 ## Challenge Types
 
@@ -36,7 +40,7 @@
 | c8 | Spike Trap | -1 life |
 | wall | Wall | Impassable |
 | normal | Normal | Walkable, no effect |
-| treasure | Treasure | Game objective |
+| treasure | Treasure | Game objective (+1000 bonus) |
 
 ## Scoring Formula
 
@@ -64,4 +68,3 @@ Fine-tuned models registered on sub-agents reduce the token penalty:
 
 - `map.json` — The competition map as a 10×10 grid array
 - `map.png` — Visual rendering of the map
-- `challenges.yaml` — Full challenge definition file
