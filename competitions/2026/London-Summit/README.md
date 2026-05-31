@@ -72,12 +72,67 @@ Final Score = challenge_points + coin_points + treasure_bonus + lives_bonus + to
 
 Same as Hero Community Builder — fine-tuned models reduce token penalty.
 
-## Known Map
+## Known Map (Practice Round)
 
-The `map.json` file contains the known practice map. The 3 finale maps were unknown and not recorded here.
+The `map.json` file contains the known practice map.
+
+| Parameter | Value |
+|-----------|-------|
+| Grid Size | 10×10 |
+| Timer | 350 seconds |
+| Start Position | A1 (row 0, col 0) |
+| Treasure | J10 (row 9, col 9) |
+
+## Finale Maps
+
+The 3 finale maps were revealed during the live event. Agents used the same Lambda code and system prompt across all rounds — only the navigation prompt changed.
+
+### Finale 1
+
+| Parameter | Value |
+|-----------|-------|
+| Grid Size | 10×10 |
+| Timer | 65 seconds |
+| Start Position | A10 (row 9, col 0) |
+| Treasure | J1 (row 0, col 9) |
+| Treasure Bonus | 5000 |
+| Challenge Overrides | c17: 50 points |
+
+A speed-focused map with a tight 65-second timer. The agent starts bottom-left and must reach the treasure at top-right. Features a horizontal wall of spike traps (c8) across row 4, vertical coins (c7) along the right edge, and concise-answer distractors (c17) at the corners.
+
+### Finale 2
+
+| Parameter | Value |
+|-----------|-------|
+| Grid Size | 6×6 |
+| Timer | 95 seconds |
+| Start Position | F1 (row 0, col 5) |
+| Treasure | F6 (row 5, col 5) |
+| Challenge Overrides | c17: 50 points, c7: 750 points |
+
+A compact 6×6 map with door/key mechanics. The agent starts top-right and must reach the treasure at bottom-right. Features a red door (c30) and red key (c40), walls blocking the top-left corner, and high-value coins (c7 worth 750 points).
+
+### Finale 3
+
+| Parameter | Value |
+|-----------|-------|
+| Grid Size | 9×9 |
+| Timer | 120 seconds |
+| Start Position | E9 (row 8, col 4) |
+| Treasure | E1 (row 0, col 4) |
+| Challenge Overrides | c17: 50 points |
+
+A fortress-style 9×9 map with heavy wall borders forming a concentric maze. The agent starts at the bottom center and must navigate inward/upward to reach the treasure at the top center. The outer ring is mostly walls, with coins (c7) guarding the corridors. The inner rings contain spike traps (c8), guardrails (c1), and point challenges (c4, c5). A red door/key pair and c6 challenge add complexity.
 
 ## Files
 
 - `map.json` — The known practice map as a 10×10 grid array
-- `map.png` — Visual rendering of the known map
+- `map.png` — Visual rendering of the known practice map
+- `finale-1-map.json` — Finale round 1 map (10×10)
+- `finale-1-map.png` — Visual rendering of finale 1
+- `finale-2-map.json` — Finale round 2 map (6×6)
+- `finale-2-map.png` — Visual rendering of finale 2
+- `finale-3-map.json` — Finale round 3 map (9×9)
+- `finale-3-map.png` — Visual rendering of finale 3
 - `challenges.yaml` — Full challenge definition file (includes door/key tiles)
+- `generate_finale_maps.py` — Script used to generate the finale map JSON files
