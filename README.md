@@ -10,6 +10,7 @@ This repository contains maps, challenge definitions, and scoring parameters fro
 |-------|------|------|---------|
 | [Hero Community Builder](competitions/2026/Hero-Community-Builder/) | May 2026 | 1 map (10×10, 230s) | Online leaderboard competition |
 | [London Summit](competitions/2026/London-Summit/) | May 2026 | 1 practice + 3 finale maps | In-person summit with door/key mechanics |
+| [New York City Summit](competitions/2026/New-York-City-Summit/) | June 2026 | 1 practice + finale maps | In-person summit with dual door/key pairs |
 
 ## Directory Structure
 
@@ -30,6 +31,10 @@ competitions/
         ├── finale-2-map.png
         ├── finale-3-map.json     # Finale round 3 (9×9, 120s)
         └── finale-3-map.png
+    └── New-York-City-Summit/     # In-person summit event
+        ├── README.md             # Event overview
+        ├── map.json              # Known practice map (10×10, 300s)
+        └── map.png               # Practice map rendering
 source/
 └── agentic-sprites/              # 100×100 PNG sprite assets for all tile types
 scripts/
