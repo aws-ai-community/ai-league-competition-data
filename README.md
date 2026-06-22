@@ -10,6 +10,7 @@ This repository contains maps, challenge definitions, and scoring parameters fro
 |-------|------|------|---------|
 | [Hero Community Builder](competitions/2026/Hero-Community-Builder/) | May 2026 | 1 map (10×10, 230s) | Online leaderboard competition |
 | [London Summit](competitions/2026/London-Summit/) | May 2026 | 1 practice + 3 finale maps | In-person summit with door/key mechanics |
+| [Bengaluru Summit](competitions/2026/Bengaluru-Summit/) | May 2026 | Same as London | In-person summit (same day as London) |
 | [New York City Summit](competitions/2026/New-York-City-Summit/) | June 2026 | 1 practice + finale maps | In-person summit with dual door/key pairs |
 
 ## Directory Structure
@@ -18,23 +19,19 @@ This repository contains maps, challenge definitions, and scoring parameters fro
 competitions/
 └── 2026/
     ├── Hero-Community-Builder/   # Online competition
-    │   ├── README.md             # Event overview with embedded map
-    │   ├── map.json              # Map grid (10×10 array)
-    │   └── map.png               # Visual map rendering
-    └── London-Summit/            # In-person summit event
-        ├── README.md             # Event overview with all maps embedded
-        ├── map.json              # Known practice map
-        ├── map.png               # Practice map rendering
-        ├── finale-1-map.json     # Finale round 1 (10×10, 65s)
-        ├── finale-1-map.png
-        ├── finale-2-map.json     # Finale round 2 (6×6, 95s)
-        ├── finale-2-map.png
-        ├── finale-3-map.json     # Finale round 3 (9×9, 120s)
-        └── finale-3-map.png
-    └── New-York-City-Summit/     # In-person summit event
-        ├── README.md             # Event overview
-        ├── map.json              # Known practice map (10×10, 300s)
-        └── map.png               # Practice map rendering
+    ├── London-Summit/            # Example structure (all events follow this pattern)
+    │   ├── README.md             # Event overview with all maps embedded
+    │   ├── map.json              # Known practice map
+    │   ├── map.png               # Practice map rendering
+    │   ├── finale-1-map.json     # Finale round 1
+    │   ├── finale-1-map.png
+    │   ├── finale-2-map.json     # Finale round 2
+    │   ├── finale-2-map.png
+    │   ├── finale-3-map.json     # Finale round 3
+    │   └── finale-3-map.png
+    ├── Bengaluru-Summit/
+    ├── New-York-City-Summit/
+    └── ...                       # Additional events follow the same structure
 source/
 └── agentic-sprites/              # 100×100 PNG sprite assets for all tile types
 scripts/
