@@ -1,0 +1,8 @@
+[
+    ["start", "normal", "normal", "normal", "normal", "c42"],
+    ["wall", "wall", "wall", "wall", "normal", "wall"],
+    ["normal", "normal", "c1", "normal", "normal", "c7"],
+    ["c32", "wall", "c8", "wall", "wall", "c18"],
+    ["normal", "normal", "c2", "normal", "c7", "c8"],
+    ["normal", "normal", "normal", "normal", "c8", "treasure"]
+  ]

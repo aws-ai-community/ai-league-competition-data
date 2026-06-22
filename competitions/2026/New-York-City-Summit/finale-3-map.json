@@ -1,0 +1,11 @@
+[
+    ["c7", "normal", "normal", "normal", "start", "normal", "normal", "normal", "c7"],
+    ["normal", "wall", "c42", "wall", "c2", "wall", "c43", "wall", "normal"],
+    ["c7", "wall", "c7", "wall", "c5", "wall", "c7", "wall", "c7"],
+    ["c7", "wall", "c2", "wall", "c8", "wall", "c2", "wall", "c7"],
+    ["c8", "wall", "c18", "wall", "c5", "wall", "c18", "wall", "c8"],
+    ["c7", "wall", "c7", "wall", "c4", "wall", "c7", "wall", "c7"],
+    ["normal", "wall", "c32", "wall", "c1", "wall", "c33", "wall", "normal"],
+    ["c17", "normal", "c17", "normal", "c6", "normal", "c17", "normal", "c17"],
+    ["wall", "wall", "wall", "wall", "treasure", "wall", "wall", "wall", "wall"]
+  ]
