@@ -33,8 +33,12 @@ def get_sprite_path(tile_code: str) -> Path:
     return SPRITES_DIR / "normal.png"
 
 
-def render_map(map_path: Path) -> Path:
-    """Render a map.json file to a PNG image."""
+def render_map(map_path: Path, start=(0, 0)) -> Path:
+    """Render a map.json file to a PNG image.
+
+    start is the (row, col) of the player's start cell; the avatar is drawn there.
+    Defaults to (0, 0) (top-left) when a map's start position isn't supplied.
+    """
     with open(map_path) as f:
         grid = json.load(f)
 
@@ -82,16 +86,18 @@ def render_map(map_path: Path) -> Path:
                         sprite = sprite.resize((tile_size, tile_size), Image.LANCZOS)
                     output.paste(sprite, (x, y), sprite)
 
-    # Place avatar on start position (top-left, [0,0])
+    # Place avatar on the player's start position
     avatar_path = SPRITES_DIR / "avatar.png"
     if avatar_path.exists():
         avatar = Image.open(avatar_path).convert("RGBA")
         if avatar.width != tile_size or avatar.height != tile_size:
             avatar = avatar.resize((tile_size, tile_size), Image.LANCZOS)
+        sr, sc = start
+        sr = max(0, min(sr, rows - 1))
+        sc = max(0, min(sc, cols - 1))
         # Only overlay avatar if the start cell isn't already the avatar
-        start_tile = grid[0][0]
-        if start_tile != "start":
-            output.paste(avatar, (0, 0), avatar)
+        if grid[sr][sc] != "start":
+            output.paste(avatar, (sc * tile_size, sr * tile_size), avatar)
 
     # Save output — use same base name as input with .png extension
     output_path = map_path.with_suffix('.png')
@@ -102,7 +108,8 @@ def render_map(map_path: Path) -> Path:
 
 def main():
     if len(sys.argv) < 2:
-        print("Usage: python render_map.py <path/to/map.json>", file=sys.stderr)
+        print("Usage: python render_map.py <path/to/map.json> [--start ROW COL]",
+              file=sys.stderr)
         sys.exit(1)
 
     map_path = Path(sys.argv[1])
@@ -113,7 +120,12 @@ def main():
         print(f"Error: {map_path} not found", file=sys.stderr)
         sys.exit(1)
 
-    render_map(map_path)
+    start = (0, 0)
+    if "--start" in sys.argv:
+        i = sys.argv.index("--start")
+        start = (int(sys.argv[i + 1]), int(sys.argv[i + 2]))
+
+    render_map(map_path, start=start)
 
 
 if __name__ == "__main__":
