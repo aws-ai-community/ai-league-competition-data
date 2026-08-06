@@ -12,6 +12,7 @@ This repository contains maps, challenge definitions, and scoring parameters fro
 | [London Summit](competitions/2026/London-Summit/) | May 2026 | 1 practice + 3 finale maps | In-person summit with door/key mechanics |
 | [Bengaluru Summit](competitions/2026/Bengaluru-Summit/) | May 2026 | Same as London | In-person summit (same day as London) |
 | [New York City Summit](competitions/2026/New-York-City-Summit/) | June 2026 | 1 practice + finale maps | In-person summit with dual door/key pairs |
+| [Washington DC Summit](competitions/2026/Washington-DC-Summit/) | June/July 2026 | 1 practice + finale maps | In-person summit |
 
 ## Directory Structure
 
