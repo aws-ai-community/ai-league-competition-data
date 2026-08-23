@@ -6,13 +6,14 @@ This repository contains maps, challenge definitions, and scoring parameters fro
 
 ## Competitions
 
-| Event | Date | Maps | Details |
-|-------|------|------|---------|
-| [Hero Community Builder](competitions/2026/Hero-Community-Builder/) | May 2026 | 1 map (10×10, 230s) | Online leaderboard competition |
-| [London Summit](competitions/2026/London-Summit/) | May 2026 | 1 practice + 3 finale maps | In-person summit with door/key mechanics |
-| [Bengaluru Summit](competitions/2026/Bengaluru-Summit/) | May 2026 | Same as London | In-person summit (same day as London) |
-| [New York City Summit](competitions/2026/New-York-City-Summit/) | June 2026 | 1 practice + finale maps | In-person summit with dual door/key pairs |
-| [Washington DC Summit](competitions/2026/Washington-DC-Summit/) | June/July 2026 | 1 practice + finale maps | In-person summit |
+| Event                                                               | Date           | Maps                       | Details                                                       |
+| ------------------------------------------------------------------- | -------------- | -------------------------- | ------------------------------------------------------------- |
+| [Hero Community Builder](competitions/2026/Hero-Community-Builder/) | May 2026       | 1 map (10×10, 230s)        | Online leaderboard competition                                |
+| [London Summit](competitions/2026/London-Summit/)                   | May 2026       | 1 practice + 3 finale maps | In-person summit with door/key mechanics                      |
+| [Bengaluru Summit](competitions/2026/Bengaluru-Summit/)             | May 2026       | Same as London             | In-person summit (same day as London)                         |
+| [New York City Summit](competitions/2026/New-York-City-Summit/)     | June 2026      | 1 practice + finale maps   | In-person summit with dual door/key pairs                     |
+| [Hong Kong Summit](competitions/2026/Hong-Kong-Summit/)             | 17 June 2026   | 1 practice + 3 finale maps | First HK summit; same maps as London, +2000 practice treasure |
+| [Washington DC Summit](competitions/2026/Washington-DC-Summit/)     | June/July 2026 | 1 practice + finale maps   | In-person summit                                              |
 
 ## Directory Structure
 
@@ -32,6 +33,7 @@ competitions/
     │   └── finale-3-map.png
     ├── Bengaluru-Summit/
     ├── New-York-City-Summit/
+    ├── Hong-Kong-Summit/         # Same maps as London; +2000 practice treasure
     └── ...                       # Additional events follow the same structure
 source/
 └── agentic-sprites/              # 100×100 PNG sprite assets for all tile types
