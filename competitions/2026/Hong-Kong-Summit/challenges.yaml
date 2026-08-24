@@ -1,0 +1,134 @@
+# Hong Kong Summit 2026 — practice-round challenge definitions
+# Confirmed values come from combat logs unless noted.
+
+event: Hong Kong Summit
+year: 2026
+date: 2026-06-17
+venue: Hong Kong Convention and Exhibition Centre
+round: practice
+
+game_parameters:
+  grid_size: [10, 10]
+  starting_lives: 5
+  timer_seconds: 350
+  start_position: {label: A1, row: 0, col: 0}
+  treasure_position: {label: J10, row: 9, col: 9}
+
+tile_types:
+  normal:
+    category: special
+    walkable: true
+  wall:
+    category: special
+    walkable: false
+    effect: ends_game
+  treasure:
+    category: special
+    walkable: true
+    effect: win_game
+  c1:
+    name: Violent Violet
+    category: challenge
+    in_game_name: Violent Violet
+  c2:
+    name: Blue Brain
+    category: challenge
+    in_game_name: Code Challenge
+  c3:
+    name: Memento
+    category: challenge
+    in_game_name: Memory Trial
+  c4:
+    name: Dark Prophet
+    category: challenge
+    in_game_name: Web Search
+  c5:
+    name: Bonehead
+    category: challenge
+    in_game_name: Simple Question Challenge
+  c6:
+    name: Boss
+    category: challenge
+    present_on_practice_map: false
+  c7:
+    name: Coins
+    category: coin
+    in_game_name: some Coins
+  c8:
+    name: Spikes
+    category: hazard
+  c18:
+    name: Healthcare API
+    category: challenge
+    points_source: london_shared_layout
+  c30:
+    name: Red Door
+    category: door
+    points_source: london_shared_layout
+  c40:
+    name: Red Key
+    category: key
+    points_source: london_shared_layout
+
+challenge_types:
+  c1:
+    points: 400
+    damage: 1
+    grading: guardrail_block
+    confirmed: true
+  c2:
+    points: 600
+    damage: 1
+    grading: code_execution
+    confirmed: true
+  c3:
+    points: 550
+    damage: 1
+    grading: exact_match
+    confirmed: true
+  c4:
+    points: 800
+    damage: 1
+    grading: web_content_match
+    confirmed: true
+  c5:
+    points: 250
+    damage: 1
+    grading: contains_match
+    confirmed: true
+  c7:
+    points: 250
+    damage: 0
+    grading: auto_collect
+    confirmed: true
+  c8:
+    points: 0
+    damage: 1
+    grading: auto_triggered
+    confirmed: false
+  c18:
+    points: 500
+    damage: 1
+    grading: json_exact_match
+    confirmed: false
+  c30:
+    points: 1000
+    damage_without_key: 5
+    grading: door
+    confirmed: false
+  c40:
+    points: 50
+    damage: 0
+    grading: auto_collect
+    confirmed: false
+
+scoring:
+  treasure_bonus: 2000
+  life_bonus_per_life: 250
+  token_bonus: max(0, 1000 - (total_output_tokens / challenges_visited))
+  custom_model_bonus_observed: 0
+  formula: challenge_points + coin_points + treasure_bonus + lives_bonus + token_bonus + custom_model_bonus
+
+map_generation:
+  type: fixed
+  notes: Same 10x10 layout as London Summit practice map.
