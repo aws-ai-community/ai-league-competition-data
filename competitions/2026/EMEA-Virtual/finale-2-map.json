@@ -1,0 +1,9 @@
+[
+  ["c7", "c7", "c7", "c7", "c7", "normal", "c5"],
+  ["c7", "c7", "c7", "c7", "c8", "normal", "c4"],
+  ["c7", "c7", "c7", "wall", "c3", "normal", "c5"],
+  ["start", "c7", "c7", "wall", "treasure", "normal", "c1"],
+  ["c7", "c7", "c7", "wall", "c2", "normal", "c5"],
+  ["c7", "c7", "c7", "c7", "c8", "normal", "c18"],
+  ["c7", "c7", "c7", "c7", "c7", "normal", "c5"]
+]
