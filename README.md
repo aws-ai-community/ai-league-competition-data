@@ -16,6 +16,7 @@ This repository contains maps, challenge definitions, and scoring parameters fro
 | [Washington DC Summit](competitions/2026/Washington-DC-Summit/)     | June/July 2026 | 1 practice + finale maps   | In-person summit                                              | Rogue   |
 | [Virtual APJ](competitions/2026/Virtual-APJ/)                       | September 2026 | 1 practice + 3 finale maps | Online APJ competition; per-round point overrides             | LozicCode |
 | [EMEA Virtual](competitions/2026/EMEA-Virtual/)                     | September 2026 | 1 practice + 3 finale maps | Online EMEA competition; APJ-style maps, reduced lives        | MarkRoss  |
+| [GCR Virtual](competitions/2026/GCR-Virtual/)                       | September 2026 | 1 practice + 3 finale maps | Online GCR competition; same maps as APJ, no disqualifications | Wood      |
 
 ## Directory Structure
 
@@ -38,6 +39,7 @@ competitions/
     ├── Hong-Kong-Summit/         # Same maps as London; +2000 practice treasure
     ├── Virtual-APJ/              # Online APJ competition (per-round point overrides)
     ├── EMEA-Virtual/             # Online EMEA competition (APJ-style maps, reduced lives)
+    ├── GCR-Virtual/              # Online GCR competition (same maps as APJ, no DQs)
     └── ...                       # Additional events follow the same structure
 source/
 └── agentic-sprites/              # 100×100 PNG sprite assets for all tile types
