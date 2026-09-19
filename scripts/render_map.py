@@ -3,8 +3,8 @@
 Render a map.json file into a visual PNG image using sprite assets.
 
 Usage:
-    python scripts/render_map.py competitions/2026/Hero-Community-Builder/map.json
-    python scripts/render_map.py competitions/2026/London-Summit/map.json
+    python scripts/render_map.py competitions/2026/agentic-maze/Hero-Community-Builder/map.json
+    python scripts/render_map.py competitions/2026/agentic-maze/London-Summit/map.json
 
 Output:
     Creates map.png in the same directory as the input map.json.
