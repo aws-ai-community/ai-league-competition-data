@@ -9,46 +9,9 @@
 
 ## Bracket
 
-Each box is one match: the score belongs to that match, and the **bold** team advances to the next round.
+Single-elimination: the winner of each match (shaded, in bold) advances to the round on its right. Full per-round scores are in the tables below.
 
-```
- ROUND OF 16                    QUARTER-FINALS               SEMI-FINALS              FINAL
-
-┌───────────────────────┐
-│ Snow Halation FC   3   │──┐
-│ Ember Bolts        0   │  │   ┌───────────────────────┐
-└───────────────────────┘  └──▶│ Snow Halation FC  12   │──┐
-┌───────────────────────┐  ┌──▶│ Daangipay          2   │  │
-│ Ember Keels        4   │  │   └───────────────────────┘  │   ┌───────────────────────┐
-│ Daangipay          5   │──┘                              └──▶│ Snow Halation FC   8   │──┐
-└───────────────────────┘                                 ┌──▶│ Ember Panthers     2   │  │
-┌───────────────────────┐      ┌───────────────────────┐  │   └───────────────────────┘  │
-│ Ember Ironsides    0   │──┐   │ sana               3   │  │                              │
-│ sana               2   │  └──▶│ Ember Panthers     4   │──┘                              │
-└───────────────────────┘  ┌──▶└───────────────────────┘                                  │
-┌───────────────────────┐  │                                                              │   ┌───────────────────────┐
-│ Ember Panthers     2   │──┘                                                              └──▶│ Snow Halation FC   5   │
-│ Ember Mephis       1   │                                                                 ┌──▶│ Ember Badgers      4   │ 🏆
-└───────────────────────┘                                                                 │   └───────────────────────┘
-┌───────────────────────┐      ┌───────────────────────┐                                  │
-│ LAFAEK FC          4   │──┐   │ Ember Cairns       3   │                                 │
-│ Ember Nomads       5   │  └──▶│ Ember Nomads       2   │──┐                              │
-└───────────────────────┘  ┌──▶└───────────────────────┘  │   ┌───────────────────────┐  │
-┌───────────────────────┐  │                              └──▶│ Ember Cairns       2   │  │
-│ Yadavs' Team       1   │──┘                              ┌──▶│ Ember Badgers      6   │──┘
-│ Ember Cairns       2   │                                 │   └───────────────────────┘
-└───────────────────────┘                                 │
-┌───────────────────────┐      ┌───────────────────────┐  │
-│ Ember Badgers      3   │──┐   │ Ember Badgers      5   │  │
-│ Ember Ibises       2   │  └──▶│ Ember Prongs       1   │──┘
-└───────────────────────┘  ┌──▶└───────────────────────┘
-┌───────────────────────┐  │
-│ Ember Prongs       2   │──┘
-│ Ember Blades       1   │
-└───────────────────────┘
-
-                                                        🏆 Champion: Snow Halation FC
-```
+![Virtual APJ Agentic Football bracket — 16-team knockout won by Snow Halation FC](bracket.svg)
 
 ## Results
 
