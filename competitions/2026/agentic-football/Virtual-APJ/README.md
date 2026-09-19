@@ -9,42 +9,45 @@
 
 ## Bracket
 
+Each box is one match: the score belongs to that match, and the **bold** team advances to the next round.
+
 ```
- ROUND OF 16              QUARTER-FINALS         SEMI-FINALS           FINAL
+ ROUND OF 16                    QUARTER-FINALS               SEMI-FINALS              FINAL
 
- Snow Halation FC ─┐
-                   ├─ Snow Halation FC ─┐
- Ember Bolts ──────┘  (3-0)            │
-                                       ├─ Snow Halation FC ─┐
- Ember Keels ──────┐                   │  (21-2)           │
-                   ├─ Daangipay ───────┘                   │
- Daangipay ────────┘  (5-4)                                │
-                                                           ├─ Snow Halation FC ─┐
- Ember Ironsides ──┐                                       │  (8-2)            │
-                   ├─ sana ────────────┐                   │                   │
- sana ─────────────┘  (2-0)            │                   │                   │
-                                       ├─ Ember Panthers ──┘                   │
- Ember Panthers ───┐                   │  (4-3)                                │
-                   ├─ Ember Panthers ──┘                                       │
- Ember Mephis ─────┘  (2-1)                                                    │
-                                                                               ├─ Snow Halation FC
- LAFAEK FC ────────┐                                                           │  (5-4)  🏆
-                   ├─ Ember Nomads ─────┐                                      │
- Ember Nomads ─────┘  (5-4)            │                                       │
-                                       ├─ Ember Cairns ────┐                   │
- Yadavs' Team ─────┐                   │  (3-2)            │                   │
-                   ├─ Ember Cairns ────┘                   │                   │
- Ember Cairns ─────┘  (2-1)                                │                   │
-                                                           ├─ Ember Badgers ───┘
- Ember Badgers ────┐                                       │  (6-2)
-                   ├─ Ember Badgers ────┐                  │
- Ember Ibises ─────┘  (3-2)            │                   │
-                                       ├─ Ember Badgers ───┘
- Ember Prongs ─────┐                   │  (5-1)
-                   ├─ Ember Prongs ─────┘
- Ember Blades ─────┘  (2-1)
+┌───────────────────────┐
+│ Snow Halation FC   3   │──┐
+│ Ember Bolts        0   │  │   ┌───────────────────────┐
+└───────────────────────┘  └──▶│ Snow Halation FC  12   │──┐
+┌───────────────────────┐  ┌──▶│ Daangipay          2   │  │
+│ Ember Keels        4   │  │   └───────────────────────┘  │   ┌───────────────────────┐
+│ Daangipay          5   │──┘                              └──▶│ Snow Halation FC   8   │──┐
+└───────────────────────┘                                 ┌──▶│ Ember Panthers     2   │  │
+┌───────────────────────┐      ┌───────────────────────┐  │   └───────────────────────┘  │
+│ Ember Ironsides    0   │──┐   │ sana               3   │  │                              │
+│ sana               2   │  └──▶│ Ember Panthers     4   │──┘                              │
+└───────────────────────┘  ┌──▶└───────────────────────┘                                  │
+┌───────────────────────┐  │                                                              │   ┌───────────────────────┐
+│ Ember Panthers     2   │──┘                                                              └──▶│ Snow Halation FC   5   │
+│ Ember Mephis       1   │                                                                 ┌──▶│ Ember Badgers      4   │ 🏆
+└───────────────────────┘                                                                 │   └───────────────────────┘
+┌───────────────────────┐      ┌───────────────────────┐                                  │
+│ LAFAEK FC          4   │──┐   │ Ember Cairns       3   │                                 │
+│ Ember Nomads       5   │  └──▶│ Ember Nomads       2   │──┐                              │
+└───────────────────────┘  ┌──▶└───────────────────────┘  │   ┌───────────────────────┐  │
+┌───────────────────────┐  │                              └──▶│ Ember Cairns       2   │  │
+│ Yadavs' Team       1   │──┘                              ┌──▶│ Ember Badgers      6   │──┘
+│ Ember Cairns       2   │                                 │   └───────────────────────┘
+└───────────────────────┘                                 │
+┌───────────────────────┐      ┌───────────────────────┐  │
+│ Ember Badgers      3   │──┐   │ Ember Badgers      5   │  │
+│ Ember Ibises       2   │  └──▶│ Ember Prongs       1   │──┘
+└───────────────────────┘  ┌──▶└───────────────────────┘
+┌───────────────────────┐  │
+│ Ember Prongs       2   │──┘
+│ Ember Blades       1   │
+└───────────────────────┘
 
- Champion: Snow Halation FC
+                                                        🏆 Champion: Snow Halation FC
 ```
 
 ## Results
@@ -66,7 +69,7 @@
 
 | Match | Home | Score | Away | Winner |
 |-------|------|-------|------|--------|
-| 1 | Snow Halation FC | 21-2 | Daangipay | **Snow Halation FC** |
+| 1 | Snow Halation FC | 12-2 | Daangipay | **Snow Halation FC** |
 | 2 | Ember Panthers | 4-3 | sana | **Ember Panthers** |
 | 3 | Ember Cairns | 3-2 | Ember Nomads | **Ember Cairns** |
 | 4 | Ember Badgers | 5-1 | Ember Prongs | **Ember Badgers** |
@@ -84,4 +87,4 @@
 |------|-------|------|--------|
 | Snow Halation FC | 5-4 | Ember Badgers | 🏆 **Snow Halation FC** |
 
-**Champion: Snow Halation FC** — unbeaten through four rounds, capped by a dominant 21-2 quarter-final and a tight 5-4 win over Ember Badgers in the final.
+**Champion: Snow Halation FC** — unbeaten through four rounds, capped by a dominant 12-2 quarter-final and a tight 5-4 win over Ember Badgers in the final.
