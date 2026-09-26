@@ -20,6 +20,7 @@ Scored dungeon-map competitions: navigate a grid, solve challenges, reach the tr
 | [EMEA Virtual](competitions/2026/agentic-maze/EMEA-Virtual/)                     | September 2026 | 1 practice + 3 finale maps | Online EMEA competition; APJ-style maps, reduced lives        | MarkRoss  |
 | [GCR Virtual](competitions/2026/agentic-maze/GCR-Virtual/)                       | September 2026 | 1 practice + 3 finale maps | Online GCR competition; same maps as APJ, no disqualifications | Wood      |
 | [LATAM Virtual](competitions/2026/agentic-maze/LATAM-Virtual/)                   | September 2026 | 1 practice + 3 finale maps | Online LATAM competition; same maps as APJ                     | wen       |
+| [NAMER Virtual](competitions/2026/agentic-maze/NAMER-Virtual/)                   | September 2026 | 1 practice + 3 finale maps | Online NAMER competition; same maps as APJ                     | amitg     |
 
 ## Agentic Football
 
@@ -53,6 +54,7 @@ competitions/
     │   ├── EMEA-Virtual/             # Online EMEA competition (APJ-style maps, reduced lives)
     │   ├── GCR-Virtual/              # Online GCR competition (same maps as APJ, no DQs)
     │   ├── LATAM-Virtual/            # Online LATAM competition (same maps as APJ)
+    │   ├── NAMER-Virtual/            # Online NAMER competition (same maps as APJ)
     │   └── ...                       # Additional maze events follow the same structure
     └── agentic-football/             # Head-to-head team knockout competitions
         └── Virtual-APJ/              # 16-team knockout bracket
