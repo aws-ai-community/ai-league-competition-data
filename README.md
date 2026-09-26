@@ -29,6 +29,7 @@ Head-to-head competitions: build a team of AI agents that compete in live matche
 | Event                                                              | Date           | Format                     | Details                              | Champion         |
 | ------------------------------------------------------------------ | -------------- | -------------------------- | ------------------------------------ | ---------------- |
 | [Virtual APJ](competitions/2026/agentic-football/Virtual-APJ/)     | September 2026 | 16-team knockout           | Round of 16 → QF → SF → Final        | Snow Halation FC |
+| [Virtual EMEA](competitions/2026/agentic-football/Virtual-EMEA/)   | September 2026 | 16-team knockout           | Round of 16 → QF → SF → Final        | Blitz Cougars    |
 
 ## Directory Structure
 
@@ -57,8 +58,12 @@ competitions/
     │   ├── NAMER-Virtual/            # Online NAMER competition (same maps as APJ)
     │   └── ...                       # Additional maze events follow the same structure
     └── agentic-football/             # Head-to-head team knockout competitions
-        └── Virtual-APJ/              # 16-team knockout bracket
-            └── README.md             # Bracket diagram + per-round results
+        ├── Virtual-APJ/              # 16-team knockout bracket
+        │   ├── README.md             # Bracket diagram + per-round results
+        │   └── bracket.svg
+        └── Virtual-EMEA/            # 16-team knockout bracket
+            ├── README.md             # Bracket diagram + per-round results
+            └── bracket.svg
 source/
 └── agentic-sprites/              # 100×100 PNG sprite assets for all maze tile types
 scripts/
