@@ -35,14 +35,14 @@ Single-elimination: the winner of each match (shaded, in bold) advances to the r
 | 1 | Real Ernesto | 0-8 | Blitz Cougars | **Blitz Cougars** |
 | 2 | FC Bayern Kerry | 4-1 | Spectral Shades | **FC Bayern Kerry** |
 | 3 | Blitz Barbs | 4-3 | Beast Balls | **Blitz Barbs** |
-| 4 | MarkRoss | 6-4 | Helm Claws | **MarkRoss** |
+| 4 | Helm Claws | 4-6 | MarkRoss | **MarkRoss** |
 
 ### Semi-finals
 
 | Match | Home | Score | Away | Winner |
 |-------|------|-------|------|--------|
 | 1 | Blitz Cougars | 11-0 | FC Bayern Kerry | **Blitz Cougars** |
-| 2 | MarkRoss | 5-4 | Blitz Barbs | **MarkRoss** |
+| 2 | Blitz Barbs | 4-5 | MarkRoss | **MarkRoss** |
 
 ### Final
 
@@ -54,4 +54,4 @@ Single-elimination: the winner of each match (shaded, in bold) advances to the r
 
 ### A note on the final
 
-The final was played under a known bug. Blitz Cougars lined up in a **1-1-1-1 formation**, and due to the bug MarkRoss was **forced to mirror the same 1-1-1-1 formation** despite having selected a different one — leaving several MarkRoss players out of position for the entire match. AWS were made aware of the bug immediately at kickoff but chose to proceed with the match as played. The result stands as recorded above.
+A previously unknown bug was discovered at the start of the final. Blitz Cougars lined up in a **1-1-1-1 formation**, and the bug **forced MarkRoss to mirror the same 1-1-1-1 formation** despite having selected a different one — leaving several MarkRoss players out of position for the entire match. AWS were made aware of the bug immediately at kickoff but chose to proceed with the match as played. The result stands as recorded above.

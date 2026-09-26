@@ -136,11 +136,11 @@ EMEA = [
         ("Real Ernesto", 0, "Blitz Cougars", 8, "bot"),
         ("FC Bayern Kerry", 4, "Spectral Shades", 1, "top"),
         ("Blitz Barbs", 4, "Beast Balls", 3, "top"),
-        ("MarkRoss", 6, "Helm Claws", 4, "top"),
+        ("Helm Claws", 4, "MarkRoss", 6, "bot"),
     ],
     [  # Semi-finals
         ("Blitz Cougars", 11, "FC Bayern Kerry", 0, "top"),
-        ("MarkRoss", 5, "Blitz Barbs", 4, "top"),
+        ("Blitz Barbs", 4, "MarkRoss", 5, "bot"),
     ],
     [  # Final
         ("Blitz Cougars", 8, "MarkRoss", 4, "top"),
