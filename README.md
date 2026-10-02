@@ -1,6 +1,6 @@
 # AWS AI League — Competition Data
 
-Historical competition data from the AWS AI League Agentic Challenge events, across two game formats: **Agentic Maze** (scored dungeon-map runs) and **Agentic Football** (head-to-head team knockouts).
+Historical competition data from the AWS AI League Agentic Challenge events, across three game formats: **Agentic Maze** (scored dungeon-map runs), **Agentic Football** (head-to-head team knockouts), and **Fine-Tuning** (dataset-and-reward model customisation scored against a baseline).
 
 This repository contains maps, challenge definitions, scoring parameters, and results from past competitions. Use this data to practice strategies, build tools, or study map layouts with the [Community Edition Map Builder](https://github.com/aws-ai-community/ai-league-community-edition).
 
@@ -31,6 +31,14 @@ Head-to-head competitions: build a team of AI agents that compete in live matche
 | [Virtual APJ](competitions/2026/agentic-football/Virtual-APJ/)     | September 2026 | 16-team knockout           | Round of 16 → QF → SF → Final        | Snow Halation FC |
 | [Virtual EMEA](competitions/2026/agentic-football/Virtual-EMEA/)   | September 2026 | 16-team knockout           | Round of 16 → QF → SF → Final        | Blitz Cougars    |
 
+## Fine-Tuning
+
+Model-customisation competitions: fine-tune a small base model (Bedrock RFT / RLVR, with a training dataset, evaluation dataset, and reward function) to beat a larger baseline model in head-to-head, LLM-as-a-judge evaluation.
+
+| Event                                                          | Date           | Format                        | Details                                              | Winner   |
+| -------------------------------------------------------------- | -------------- | ----------------------------- | ---------------------------------------------------- | -------- |
+| [Virtual APJ](competitions/2026/fine-tuning/Virtual-APJ/)      | September 2026 | 1 online qualifier + 5 finale rounds | Online win-rate leaderboard; finale 5 double points | chanche3 |
+
 ## Directory Structure
 
 ```
@@ -57,13 +65,16 @@ competitions/
     │   ├── LATAM-Virtual/            # Online LATAM competition (same maps as APJ)
     │   ├── NAMER-Virtual/            # Online NAMER competition (same maps as APJ)
     │   └── ...                       # Additional maze events follow the same structure
-    └── agentic-football/             # Head-to-head team knockout competitions
-        ├── Virtual-APJ/              # 16-team knockout bracket
-        │   ├── README.md             # Bracket diagram + per-round results
-        │   └── bracket.svg
-        └── Virtual-EMEA/            # 16-team knockout bracket
-            ├── README.md             # Bracket diagram + per-round results
-            └── bracket.svg
+    ├── agentic-football/             # Head-to-head team knockout competitions
+    │   ├── Virtual-APJ/              # 16-team knockout bracket
+    │   │   ├── README.md             # Bracket diagram + per-round results
+    │   │   └── bracket.svg
+    │   └── Virtual-EMEA/            # 16-team knockout bracket
+    │       ├── README.md             # Bracket diagram + per-round results
+    │       └── bracket.svg
+    └── fine-tuning/                  # Model-customisation competitions (RFT/RLVR vs baseline)
+        └── Virtual-APJ/             # Online win-rate qualifier + 5 finale rounds
+            └── README.md             # Scoring explanation + per-round results
 source/
 └── agentic-sprites/              # 100×100 PNG sprite assets for all maze tile types
 scripts/
