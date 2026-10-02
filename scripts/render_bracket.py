@@ -147,9 +147,37 @@ EMEA = [
     ],
 ]
 
+# --- GCR Virtual -----------------------------------------------------------
+GCR = [
+    [  # Round of 16
+        ("BaoyeahFootball", 2, "Bonded Rationality", 3, "bot"),
+        ("CataIyst Ammonites", 4, "Catalyst Alloys", 0, "top"),
+        ("Catalyst Ammonites", 6, "Catalyst Antlers", 5, "top"),
+        ("Catalyst Arrows", 1, "Catalyst Bellows", 3, "bot"),
+        ("Catalyst Blazers", 4, "Catalyst Bramblers", 2, "top"),
+        ("CFB", 3, "Excalibur Pro", 4, "bot"),
+        ("IISI Num One", 4, "IISI_ColdJacketTeam", 1, "top"),
+        ("ratio team", 4, "Yanglin`s fan club", 3, "top"),
+    ],
+    [  # Quarter-finals
+        ("Bonded Rationality", 3, "CataIyst Ammonites", 2, "top"),
+        ("Catalyst Ammonites", 1, "Catalyst Bellows", 3, "bot"),
+        ("Catalyst Blazers", 3, "Excalibur Pro", 1, "top"),
+        ("IISI Num One", 5, "ratio team", 1, "top"),
+    ],
+    [  # Semi-finals
+        ("Bonded Rationality", 0, "Catalyst Bellows", 2, "bot"),
+        ("Catalyst Blazers", 1, "IISI Num One", 5, "bot"),
+    ],
+    [  # Final
+        ("Catalyst Bellows", 3, "IISI Num One", 1, "top"),
+    ],
+]
+
 EVENTS = [
     (APJ, TITLES_16, "competitions/2026/agentic-football/Virtual-APJ/bracket.svg"),
     (EMEA, TITLES_16, "competitions/2026/agentic-football/Virtual-EMEA/bracket.svg"),
+    (GCR, TITLES_16, "competitions/2026/agentic-football/GCR-Virtual/bracket.svg"),
 ]
 
 if __name__ == "__main__":

@@ -30,6 +30,7 @@ Head-to-head competitions: build a team of AI agents that compete in live matche
 | ------------------------------------------------------------------ | -------------- | -------------------------- | ------------------------------------ | ---------------- |
 | [Virtual APJ](competitions/2026/agentic-football/Virtual-APJ/)     | September 2026 | 16-team knockout           | Round of 16 → QF → SF → Final        | Snow Halation FC |
 | [Virtual EMEA](competitions/2026/agentic-football/Virtual-EMEA/)   | September 2026 | 16-team knockout           | Round of 16 → QF → SF → Final        | Blitz Cougars    |
+| [GCR Virtual](competitions/2026/agentic-football/GCR-Virtual/)     | September 2026 | 16-team knockout           | Round of 16 → QF → SF → Final        | Catalyst Bellows |
 
 ## Fine-Tuning
 
@@ -69,7 +70,10 @@ competitions/
     │   ├── Virtual-APJ/              # 16-team knockout bracket
     │   │   ├── README.md             # Bracket diagram + per-round results
     │   │   └── bracket.svg
-    │   └── Virtual-EMEA/            # 16-team knockout bracket
+    │   ├── Virtual-EMEA/            # 16-team knockout bracket
+    │   │   ├── README.md             # Bracket diagram + per-round results
+    │   │   └── bracket.svg
+    │   └── GCR-Virtual/             # 16-team knockout bracket
     │       ├── README.md             # Bracket diagram + per-round results
     │       └── bracket.svg
     └── fine-tuning/                  # Model-customisation competitions (RFT/RLVR vs baseline)
