@@ -39,6 +39,7 @@ Model-customisation competitions: fine-tune a small base model (Bedrock RFT / RL
 | Event                                                          | Date           | Format                        | Details                                              | Winner   |
 | -------------------------------------------------------------- | -------------- | ----------------------------- | ---------------------------------------------------- | -------- |
 | [Virtual APJ](competitions/2026/fine-tuning/Virtual-APJ/)      | September 2026 | 1 online qualifier + 5 finale rounds | Online win-rate leaderboard; finale 5 double points | chanche3 |
+| [Virtual EMEA](competitions/2026/fine-tuning/Virtual-EMEA/)    | October 2026   | 1 online qualifier + 5 finale rounds | Much harder than APJ (0% win rate in R1); finale 5 double points | alexli   |
 
 ## Directory Structure
 
@@ -77,7 +78,9 @@ competitions/
     │       ├── README.md             # Bracket diagram + per-round results
     │       └── bracket.svg
     └── fine-tuning/                  # Model-customisation competitions (RFT/RLVR vs baseline)
-        └── Virtual-APJ/             # Online win-rate qualifier + 5 finale rounds
+        ├── Virtual-APJ/             # Online win-rate qualifier + 5 finale rounds
+        │   └── README.md             # Scoring explanation + per-round results
+        └── Virtual-EMEA/            # Harder EMEA event (0% win rate in R1) + 5 finale rounds
             └── README.md             # Scoring explanation + per-round results
 source/
 └── agentic-sprites/              # 100×100 PNG sprite assets for all maze tile types
