@@ -51,3 +51,7 @@ Single-elimination: the winner of each match (shaded, in bold) advances to the r
 | Rosscomp1 | 6-3 | Clash Arrows | 🏆 **Rosscomp1** |
 
 **Champion: Rosscomp1** — unbeaten through four rounds, including a 7-0 shutout in the Round of 16 and a 10-2 semi-final rout of Clash Apostles, before beating Clash Arrows 6-3 in the final. Clash Arrows reached the final on the back of a 9-1 demolition of Nova Invaders in the quarter-finals.
+
+### A note on the quarter-final: a DeepRacer reunion
+
+The quarter-final between **Rosscomp1** and **Clash Breakers** was a reunion of two former AWS DeepRacer racers: Rosscomp1 against **Polish Thunder** (aka **Daryl Jezierski**). Daryl took an early lead before Rosscomp1 turned the game around to win 7-5 — the tightest match of Rosscomp1's title run.
