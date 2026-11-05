@@ -174,10 +174,38 @@ GCR = [
     ],
 ]
 
+# --- NAMER Virtual ---------------------------------------------------------
+NAMER = [
+    [  # Round of 16
+        ("Rosscomp1", 7, "Clash Avalanches", 0, "top"),
+        ("Clash Breakers", 8, "Danger FC", 0, "top"),
+        ("Clash Beacons", 4, "Clash Bramblers", 5, "bot"),
+        ("Clash Apostles", 6, "Clash Barons", 3, "top"),
+        ("Clash Bastions", 5, "Nova Invaders", 6, "bot"),
+        ("Clash Arrows", 4, "Myself", 1, "top"),
+        ("Clash Axes", 5, "Clash Condors", 6, "bot"),
+        ("Clash Antlers", 6, "Clash Claws", 3, "top"),
+    ],
+    [  # Quarter-finals
+        ("Rosscomp1", 7, "Clash Breakers", 5, "top"),
+        ("Clash Bramblers", 2, "Clash Apostles", 3, "bot"),
+        ("Nova Invaders", 1, "Clash Arrows", 9, "bot"),
+        ("Clash Condors", 6, "Clash Antlers", 7, "bot"),
+    ],
+    [  # Semi-finals
+        ("Rosscomp1", 10, "Clash Apostles", 2, "top"),
+        ("Clash Arrows", 8, "Clash Antlers", 3, "top"),
+    ],
+    [  # Final
+        ("Rosscomp1", 6, "Clash Arrows", 3, "top"),
+    ],
+]
+
 EVENTS = [
     (APJ, TITLES_16, "competitions/2026/agentic-football/Virtual-APJ/bracket.svg"),
     (EMEA, TITLES_16, "competitions/2026/agentic-football/Virtual-EMEA/bracket.svg"),
     (GCR, TITLES_16, "competitions/2026/agentic-football/GCR-Virtual/bracket.svg"),
+    (NAMER, TITLES_16, "competitions/2026/agentic-football/NAMER-Virtual/bracket.svg"),
 ]
 
 if __name__ == "__main__":
