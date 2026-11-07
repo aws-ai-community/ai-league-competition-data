@@ -22,7 +22,13 @@ Per the organisers' briefing email to finalists (30 October):
 
 In the finalist console, each finalist edits a prompt and inference parameters (temperature, top-P, maximum length capped at 200 tokens), can run it to preview the answer, then makes a final submission before the timer ends.
 
-The questions were broadly about attending re:Invent, covering things like travel, choosing sessions, networking and planning a conference day.
+Question themes (paraphrased, not the exact wording):
+
+1. Beating jet lag between landing on Sunday and a 9 AM Monday session
+2. Choosing between keynotes, breakouts, chalk talks, workshops, builders' sessions and code talks with about 10 seats
+3. Splitting limited time between sessions, the expo and networking when the team expects learnings back
+4. Networking at re:Invent as a non-native English speaker
+5. (Double points) Planning a Thursday with fixed sessions in two venues, a budget, a step limit and a dinner deadline
 
 ## Round 1 — Online Qualifier Leaderboard
 
