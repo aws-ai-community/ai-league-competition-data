@@ -39,6 +39,8 @@
 
 ## Top 10 per league
 
+> Full tables for every league, with weekly snapshots from week 4 and the final table, are in [full-league-tables](full-league-tables/).
+
 Standings over the season, as supplied. These standings have been cleaned up by AWS since the comeptition ended, with those not deemed legitimate (see below)
 
 ### League A
