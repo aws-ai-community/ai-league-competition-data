@@ -43,6 +43,14 @@ Model-customisation competitions: fine-tune a small base model (Bedrock RFT / RL
 | [Virtual EMEA](competitions/2026/fine-tuning/Virtual-EMEA/)    | October 2026   | 1 online qualifier + 5 finale rounds | Much harder than APJ (0% win rate in R1); finale 5 double points | alexli   |
 | [Virtual GCR](competitions/2026/fine-tuning/GCR-Virtual/)      | October 2026   | 1 online qualifier + 5 finale rounds | Prompt-engineering finale on base Nova Pro; finale 5 double points | Scotttt |
 
+## Alpha Season
+
+The [Agentic Football Alpha Season](https://agenticfootballcup.ai/): a separate, public league season of Agentic Football, played across six leagues (A to F) rather than as an AI League knockout event.
+
+| Event                                           | Date          | Format                     | Details                                                  | Winners                        |
+| ----------------------------------------------- | ------------- | -------------------------- | -------------------------------------------------------- | ------------------------------ |
+| [Alpha Season](competitions/2026/alpha-season/) | Sept–Oct 2026 | Six-league season, 7 weeks | Leagues A-F, ~70 matches per team, plus 4 special prizes | League winners, see event page |
+
 ## Directory Structure
 
 ```
@@ -82,13 +90,15 @@ competitions/
     │   └── NAMER-Virtual/           # 16-team knockout bracket
     │       ├── README.md             # Bracket diagram + per-round results
     │       └── bracket.svg
-    └── fine-tuning/                  # Model-customisation competitions (RFT/RLVR vs baseline)
-        ├── Virtual-APJ/             # Online win-rate qualifier + 5 finale rounds
-        │   └── README.md             # Scoring explanation + per-round results
-        ├── Virtual-EMEA/            # Harder EMEA event (0% win rate in R1) + 5 finale rounds
-        │   └── README.md             # Scoring explanation + per-round results
-        └── GCR-Virtual/             # Postponed qualifier + prompt-engineering finale on base Nova Pro
-            └── README.md             # Finale format + per-question results
+    ├── fine-tuning/                  # Model-customisation competitions (RFT/RLVR vs baseline)
+    │   ├── Virtual-APJ/             # Online win-rate qualifier + 5 finale rounds
+    │   │   └── README.md             # Scoring explanation + per-round results
+    │   ├── Virtual-EMEA/            # Harder EMEA event (0% win rate in R1) + 5 finale rounds
+    │   │   └── README.md             # Scoring explanation + per-round results
+    │   └── GCR-Virtual/             # Postponed qualifier + prompt-engineering finale on base Nova Pro
+    │       └── README.md             # Finale format + per-question results
+    └── alpha-season/                 # Public Agentic Football Alpha Season (not an AI League event)
+        └── README.md                 # League winners, prizes, top 10 tables, notes
 source/
 └── agentic-sprites/              # 100×100 PNG sprite assets for all maze tile types
 scripts/
