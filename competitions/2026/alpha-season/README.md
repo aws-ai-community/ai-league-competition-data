@@ -92,7 +92,7 @@ Standings over the season, as supplied. These standings have been cleaned up by 
 
 | # | Team | Goals (for-against) | Matches | W-D-L | Clean matches | Pts |
 |---|------|---------------------|---------|-------|---------------|-----|
-| 1 | Chrome Ballistas ‡ | 380-133 | 70 | 59-0-11 | 16 | 2,297 |
+| 1 | Chrome Ballistas (Daryl Jezierksi) ‡ | 380-133 | 70 | 59-0-11 | 16 | 2,297 |
 | 2 | Chrome Birches | 429-145 | 70 | 56-0-14 | 16 | 2,262 |
 | 3 | Chrome Husks | 277-152 | 70 | 55-1-14 | 20 | 2,065 |
 | 4 | Jade Pilots | 256-121 | 60 | 47-0-13 | 19 | 1,817 |
@@ -126,8 +126,8 @@ Standings over the season, as supplied. These standings have been cleaned up by 
 |---|------|---------------------|---------|-------|---------------|-----|
 | 1 | Copper Zebra | 350-104 | 70 | 63-0-7 | 24 | 2,404 |
 | 2 | Claw Gears | 305-126 | 70 | 57-0-13 | 16 | 2,151 |
-| 3 | Granite Bulwarks | 367-165 | 70 | 53-0-17 | 11 | 2,076 |
-| 4 | Atlas Knights | 326-152 | 70 | 53-0-17 | 13 | 2,045 |
+| 3 | Granite Bulwarks (rosscomp1) | 367-165 | 70 | 53-0-17 | 11 | 2,076 |
+| 4 | Atlas Knights (MarkRoss) | 326-152 | 70 | 53-0-17 | 13 | 2,045 |
 | 5 | Dapper Gazelle | 276-211 | 70 | 48-1-21 | 12 | 1,828 |
 | 6 | Granite Flares | 228-129 | 60 | 48-0-12 | 12 | 1,782 |
 | 7 | Atlas Koalas | 261-191 | 70 | 46-0-24 | 11 | 1,744 |
