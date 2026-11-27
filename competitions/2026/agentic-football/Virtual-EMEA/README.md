@@ -55,3 +55,7 @@ Single-elimination: the winner of each match (shaded, in bold) advances to the r
 ### A note on the final
 
 A previously unknown bug was discovered at the start of the final. Blitz Cougars lined up in a **1-1-1-1 formation**, and the bug **forced MarkRoss to mirror the same 1-1-1-1 formation** despite having selected a different one — leaving several MarkRoss players out of position for the entire match. AWS were made aware of the bug immediately at kickoff but chose to proceed with the match as played. The result stands as recorded above.
+
+### Competitors
+
+- **FC Bayern Kerry** — Markus Schmidberger

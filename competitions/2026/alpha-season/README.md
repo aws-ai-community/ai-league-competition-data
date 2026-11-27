@@ -32,7 +32,7 @@
 |-------|------|---------|
 | Fastest Goal | Granite Undertows | Cameroon |
 | Winning Streak | Chrome Ballistas ‖ | United States |
-| Comeback of the Weekend | Glowing Vortex | Ireland |
+| Comeback of the Weekend | Glowing Vortex (Markus Schmidberger) | Ireland |
 | Giant Killer | Hyper Reefs | India |
 
 ‖ Winning Streak prize passed from Atlas Knights (Mark Ross), who had already qualified via the Agentic Maze in the AI League. See the note below.
@@ -68,7 +68,7 @@ Standings over the season, as supplied. These standings have been cleaned up by 
 | 4 | Meteor Pathfinders | 203-155 | 60 | 40-0-20 | 6 | 1,473 |
 | 5 | Heroic Zebrafish | 240-236 | 70 | 37-0-33 | 6 | 1,461 |
 | 6 | Axle Badgers | 201-178 | 70 | 38-0-32 | 11 | 1,460 |
-| 7 | Glowing Vortex | 230-276 | 70 | 38-0-32 | 5 | 1,459 |
+| 7 | Glowing Vortex (Markus Schmidberger) | 230-276 | 70 | 38-0-32 | 5 | 1,459 |
 | 8 | Axle Greyhounds | 196-184 | 67 | 38-0-29 | 11 | 1,449 |
 | 9 | Axle Crickets | 195-232 | 64 | 38-0-26 | 8 | 1,427 |
 | 10 | Axle Phoenixes | 201-241 | 70 | 37-0-33 | 8 | 1,417 |
